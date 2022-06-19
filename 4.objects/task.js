@@ -39,3 +39,15 @@ function Student (name,gender,age) {
   delete this.marks
     
     }
+    class Library {
+      constructor (name,books) {
+        this.name=name(String)
+        this.books=books
+        this.books=[]
+      }
+      }
+      Library.addBook=function(book) {
+        if (this.state>30) {
+          this.books.push(book)
+        }
+      }
