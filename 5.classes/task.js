@@ -70,12 +70,12 @@ class FantasticBook extends Book {
   this.type="detective";
   }
   }
-class Library {
-  
-constructor (name,books=[]) {
-this.name=name
-this.books=books
 
+
+class Library {
+constructor (name) {
+  this.name=name
+  this.books=[]
 }
 
 addBook(book) {
