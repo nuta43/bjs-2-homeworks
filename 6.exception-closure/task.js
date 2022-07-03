@@ -20,6 +20,12 @@ function parseCount(n) {
         if ((a+b)<c) {
             throw new Error ("Треугольник с такими сторонами не существует")
           }
+          if ((a+c)<b) {
+            throw new Error ("Треугольник с такими сторонами не существует")
+          }
+          if ((b+c)<a) {
+            throw new Error ("Треугольник с такими сторонами не существует")
+          }
       this.a=a
       this.b=b
       this.c=c
