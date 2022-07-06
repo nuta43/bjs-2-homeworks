@@ -16,7 +16,7 @@ class AlarmClock {
 
         removeClock(id) {
             if (this.alarmCollection.find(f => f.id===id)){
-                this.alarmCollection.splice(this.alarmCollection.filter(f => f.id !== id),1)
+                this.alarmCollection.splice(this.alarmCollection.filter(f => f.id === id),1)
             return true
         }
             else return false
